@@ -10,7 +10,7 @@ let searchedMovieName = "";
 // Fetch movies from the OMDB API
 let getMovies = (movieName, page) => {
   const key = "7f8c242";
-  const url = `http://www.omdbapi.com/?s=${movieName}&apikey=${key}&page=${page}`;
+  const url = `https://www.omdbapi.com/?s=${movieName}&apikey=${key}&page=${page}`;
 
   if (movieName.length <= 0) {
     result.innerHTML = `<h3 class="msg">Please enter a movie name</h3>`;
