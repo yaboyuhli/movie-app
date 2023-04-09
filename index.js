@@ -34,7 +34,7 @@ let getMovies = (movieName, page) => {
 // Fetch movie details from the OMDB API
 let getMovieDetails = (title) => {
   const key = "7f8c242";
-  const url = `http://www.omdbapi.com/?t=${title}&apikey=${key}`;
+  const url = `https://www.omdbapi.com/?t=${title}&apikey=${key}`;
 
   fetch(url)
     .then((resp) => resp.json())
